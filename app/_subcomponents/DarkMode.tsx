@@ -6,7 +6,6 @@ import SunIcon from "./icons/SunIcon";
 export default function DarkMode() {
   const toggleDarkMode = () => {
     const nextIsDark = !document.documentElement.classList.contains("dark");
-
     document.documentElement.classList.toggle("dark", nextIsDark);
     document.documentElement.classList.toggle("light", !nextIsDark);
   };
