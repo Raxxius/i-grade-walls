@@ -6,7 +6,7 @@ import About from "./_subcomponents/About";
 export default function Home() {
 
   const headerLayout =
-    "h-[100px] w-full bg-header text-black";
+    "h-[100px] w-full bg-header";
 
   const sidebarLayout =
     "w-64 bg-sidebar";
