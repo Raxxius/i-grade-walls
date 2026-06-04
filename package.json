@@ -11,6 +11,8 @@
     "preview:cf": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy:cf": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload:cf": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "db:seed:local": "wrangler d1 execute i-grade-walls --local --file ./drizzle/seed-users.sql",
+    "db:seed:remote": "wrangler d1 execute i-grade-walls --remote --file ./drizzle/seed-users.sql",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
