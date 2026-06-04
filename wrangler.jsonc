@@ -3,35 +3,34 @@
   "main": ".open-next/worker.js",
   "name": "i-grade-walls",
   "compatibility_date": "2026-06-02",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "directory": ".open-next/assets",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
   },
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "i-grade-walls"
-    }
+      "service": "i-grade-walls",
+    },
   ],
   "r2_buckets": [
     {
       "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "i-grade-walls-opennext-cache"
-    }
+      "bucket_name": "i-grade-walls-opennext-cache",
+    },
   ],
-  "d1_databases" :[
-    {"binding": "DB",
-    "database_name": "i-grade-walls",
-    "database_id": "dcedb026-8425-4a06-8de7-64f264fd3cc5"
-  }
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "i-grade-walls",
+      "database_id": "dcedb026-8425-4a06-8de7-64f264fd3cc5",
+    },
   ],
   "images": {
-    "binding": "IMAGES"
+    "binding": "IMAGES",
   },
   "observability": {
-    "enabled": true
-  }
+    "enabled": true,
+  },
 }
